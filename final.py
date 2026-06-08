@@ -34,7 +34,7 @@ def calcular_jaccard(columna1, columna2):
 
 
 st.set_page_config(page_title="BioEco Analizador", layout="wide")
-st.markdown('<meta name="google-site-verification" content="google335503c48afc1608.html" />', unsafe_allow_html=True)
+st.markdown('<meta name="google-site-verification" content="335503c48afc1608" />', unsafe_allow_html=True)
 st.title("Analizador Automatizado de Ecologia de Comunidades")
 st.markdown("---")
 
