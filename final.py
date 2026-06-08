@@ -84,7 +84,7 @@ if archivo_subido is not None:
 
         df = df.apply(pd.to_numeric, errors='coerce').fillna(0).astype(int)
 
-        st.sidebar.success(f"Identificador: '{palabra_encontrada}'")
+        st.sidebar.success("Analisis completado con exito")
 
         for punto in df.columns:
             datos_filtrados = df[punto][df[punto] > 0]
@@ -155,7 +155,7 @@ if archivo_subido is not None:
         with tab_jac:
             st.subheader("Matriz Cuadrada de Jaccard (Presencia/Ausencia)")
             st.dataframe(
-                df_jaccard.astype(float).style.background_gradient(cmap="YlGnBu", axis=None),
+                df_jaccard.astype(float).style.background_gradient(cmap="RdYlGn", vmin=0, vmax=1, axis=None),
                 use_container_width=True
             )
 
