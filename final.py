@@ -167,3 +167,7 @@ if archivo_subido is not None:
 
 else:
     st.info("Bienvenido. Sube tu archivo Excel en el panel izquierdo.")
+
+st.sidebar.markdown("---")
+st.sidebar.markdown("Desarrollado por Ander MG · 2026")
+
