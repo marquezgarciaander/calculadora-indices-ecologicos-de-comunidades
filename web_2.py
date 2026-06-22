@@ -336,6 +336,10 @@ if archivo_subido is not None:
 
         tabs = st.tabs(tabs_disponibles)
 
+        with tabs[0]:
+            st.subheader("Tabla Completa de Datos Calculados")
+            st.dataframe(df_indices, use_container_width=True)
+
         # Solo se renderiza la pestaña de Jaccard si existe
         if df_jaccard is not None:
             with tabs[1]:
