@@ -180,7 +180,7 @@ with st.sidebar:
 
     todos = st.checkbox("Seleccionar todos", value=True)
 
-    calc_pielou  = st.checkbox("Índice de Pielou (J')",            value=todos, help="Al activarse activaautomáticamente el índice de Shannon.")
+    calc_pielou  = st.checkbox("Índice de Pielou (J')",            value=todos, help="Al activarse activa automáticamente el índice de Shannon.")
 
     # Shannon se deshabilita y fuerza a True si Pielou está marcado,
     # porque Pielou depende matemáticamente de Shannon
@@ -188,7 +188,7 @@ with st.sidebar:
         "Índice de Shannon (H')",
         value=todos or calc_pielou,
         disabled=calc_pielou,
-        help="Se calcula usando el logaritmo en base de e."
+        help="Se calcula usando el logaritmo natural."
     )
 
     calc_simpson = st.checkbox("Índices de Simpson (D, 1-D, 1/D)", value=todos)
