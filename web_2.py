@@ -201,7 +201,6 @@ st.markdown("""
 
 # ESTO ES LA BARRA LATERAL
 with st.sidebar:
-    st.markdown("Sube tu matriz de abundancias en formato Excel o CSV.")
     archivo_subido = st.file_uploader("Selecciona tu archivo", type=["xlsx", "xls", "csv"])
     st.markdown("<hr style='margin: 8px 0'>", unsafe_allow_html=True)
 
