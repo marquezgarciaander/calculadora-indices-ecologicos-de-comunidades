@@ -185,7 +185,7 @@ st.markdown("""
         </div>
         <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
             <div style="font-size: 1.8rem;">⚖️</div>
-            <div style="font-weight: 600;">Pielou (J)</div>
+            <div style="font-weight: 600;">Pielou</div>
             <div style="font-size: 0.85rem; color: #666;">Equitatividad</div>
         </div>
         <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
