@@ -178,15 +178,18 @@ st.markdown("""
     <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
         <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
             <div style="font-size: 1.8rem;">📊</div>
-            <div style="font-weight: 600;">Shannon & Pielou</div>
+            <div style="font-weight: 600;">Shannon y Simpson (D, 1-D, 1/D)</div>
+            <div style="font-size: 0.85rem; color: #666;">Biodiversidad</div>
         </div>
         <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
-            <div style="font-size: 1.8rem;">🔢</div>
-            <div style="font-weight: 600;">Simpson (D, 1-D, 1/D)</div>
+            <div style="font-size: 1.8rem;">⚖️</div>
+            <div style="font-weight: 600;">Pielou (J)</div>
+            <div style="font-size: 0.85rem; color: #666;">Equitatividad</div>
         </div>
         <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
             <div style="font-size: 1.8rem;">🔗</div>
             <div style="font-weight: 600;">Jaccard</div>
+            <div style="font-size: 0.85rem; color: #666;">Similitud entre puntos de muestreo</div>
          </div>
         <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
             <div style="font-size: 1.8rem;">📥</div>
