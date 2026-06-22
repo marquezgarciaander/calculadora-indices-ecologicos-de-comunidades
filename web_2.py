@@ -156,11 +156,53 @@ def calcular_matriz_completa(df_base, palabra_encontrada, shannon=True, pielou=T
 # INTERFAZ DE LA WEB CON STREAMLIT
 # ==========================================
 
-st.set_page_config(page_title="BioEco Analizador", layout="wide")
+st.set_page_config(
+    page_title="Calculadora de Biodiversidad",
+    page_icon="logo.jpg",
+    layout="wide"
+)
 
-# ES LA PÁGINA PRINCIPAL
-st.title("Analizador Automatizado de Ecología de Comunidades")
-st.markdown("---")
+st.markdown("""
+    <head>
+        <meta name="description" content="Calcula automáticamente índices de biodiversidad (Shannon, Simpson, Pielou, Jaccard) a partir de matrices de abundancia en Excel o CSV. Herramienta gratuita para ecólogos.">
+        <meta name="keywords" content="biodiversidad, índices ecológicos, Shannon, Simpson, Pielou, Jaccard, ecología de comunidades, macroinvertebrados">
+    </head>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div style="text-align: center; padding: 2rem 0 1rem 0;">
+    <h1 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 0.3rem;">🌿 BioEco Analizador</h1>
+    <p style="font-size: 1.2rem; color: #555; max-width: 650px; margin: 0 auto 1.5rem auto;">
+        Calcula índices de biodiversidad ecológica de forma automática a partir de tu matriz de abundancias.
+        Sin instalaciones, sin código. Solo sube tu Excel o CSV.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
+        <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
+            <div style="font-size: 1.8rem;">📊</div>
+            <div style="font-weight: 600;">Shannon & Pielou</div>
+            <div style="font-size: 0.85rem; color: #666;">Diversidad y equitatividad</div>
+        </div>
+        <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
+            <div style="font-size: 1.8rem;">🔢</div>
+            <div style="font-weight: 600;">Simpson (D, 1-D, 1/D)</div>
+            <div style="font-size: 0.85rem; color: #666;">Dominancia y diversidad</div>
+        </div>
+        <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
+            <div style="font-size: 1.8rem;">🔗</div>
+            <div style="font-weight: 600;">Jaccard</div>
+            <div style="font-size: 0.85rem; color: #666;">Similitud entre puntos</div>
+        </div>
+        <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
+            <div style="font-size: 1.8rem;">📥</div>
+            <div style="font-weight: 600;">Exporta a Excel</div>
+            <div style="font-size: 0.85rem; color: #666;">Resultados listos para usar</div>
+        </div>
+    </div>
+</div>
+<hr>
+""", unsafe_allow_html=True)
+
+
 
 # ESTO ES LA BARRA LATERAL
 with st.sidebar:
