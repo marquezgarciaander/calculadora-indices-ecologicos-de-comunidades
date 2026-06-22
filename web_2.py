@@ -43,7 +43,7 @@ def calcular_jaccard(columna1, columna2):
 # ==========================================
 def cargar_y_limpiar_matriz(archivo_subido):
     lista_sinonimos = [
-        "especie", "especies", "taxon", "taxones", "familia", "familias",
+        "especie", "especies", "taxon", "taxones", "taxón", "familia", "familias",
         "bicho", "bichos", "organismo", "organismos",
         "macroinvertebrado", "macroinvertebrados"
     ]
