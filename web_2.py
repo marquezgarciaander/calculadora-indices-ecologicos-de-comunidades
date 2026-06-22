@@ -208,8 +208,7 @@ st.markdown("""
 with st.sidebar:
     archivo_subido = st.file_uploader("Selecciona tu archivo", type=["xlsx", "xls", "csv"])
     st.markdown("<hr style='margin: 8px 0'>", unsafe_allow_html=True)
-    with st.sidebar:
-    # ... código anterior ...
+
     st.markdown("### ¿No sabes cómo estructurar tus datos?")
     ejemplo_df = pd.DataFrame({
         "Especie": ["Especie A", "Especie B", "Especie C"],
