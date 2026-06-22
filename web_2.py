@@ -319,7 +319,7 @@ if archivo_subido is not None:
         with col4:
             st.write("")  # pequeño espaciado
             st.download_button(
-            label="📥 Descargar Excel",
+            label="📥 Descargar Excel con los índices",
             data=buffer_excel,
             file_name="resultados_biodiversidad.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
@@ -335,17 +335,6 @@ if archivo_subido is not None:
             tabs_disponibles.append("Similitud de Jaccard")
 
         tabs = st.tabs(tabs_disponibles)
-
-        with tabs[0]:
-            st.subheader("Tabla Completa de Datos Calculados")
-            st.download_button(
-                label="📥 Descargar Excel con Índices",
-                data=buffer_excel,
-                file_name="resultados_biodiversidad.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-            )
-            st.write("")
-            st.dataframe(df_indices, use_container_width=True)
 
         # Solo se renderiza la pestaña de Jaccard si existe
         if df_jaccard is not None:
