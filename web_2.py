@@ -261,7 +261,7 @@ with st.sidebar:
         # ------------------------------------------
         calcular = st.button("Calcular", use_container_width=True)
 
-    st.markdown("Desarrollado por Ander MG · 2026")
+
 
 
 # ESTO VUELVE A SER PARTE DE LO PRINCIPAL
@@ -353,7 +353,3 @@ if archivo_subido is not None:
 else:
     st.info("Bienvenido. Sube tu archivo Excel en el panel izquierdo.")
 
-
-#
-#  python -m streamlit run web_2.py
-#
