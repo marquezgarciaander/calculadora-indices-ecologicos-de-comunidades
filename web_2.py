@@ -215,7 +215,7 @@ with st.sidebar:
         "Punto_1": [10, 0, 5],
         "Punto_2": [2, 14, 1]
     })
-    csv_ejemplo = ejemplo_df.to_csv(index=False).encode('utf-8')
+    csv_ejemplo = ejemplo_df.to_csv(index=False, sep=';').encode('utf-8')
     st.download_button(
         label="📥 Descargar plantilla de ejemplo",
         data=csv_ejemplo,
@@ -260,7 +260,6 @@ with st.sidebar:
         # El usuario elige sus índices y luego pulsa este botón.
         # ------------------------------------------
         calcular = st.button("Calcular", use_container_width=True)
-
 
 
 
@@ -353,3 +352,7 @@ if archivo_subido is not None:
 else:
     st.info("Bienvenido. Sube tu archivo Excel en el panel izquierdo.")
 
+
+#
+#  python -m streamlit run web_2.py
+#
