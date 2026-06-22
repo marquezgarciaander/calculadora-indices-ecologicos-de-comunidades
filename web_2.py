@@ -197,10 +197,6 @@ st.markdown("""
             <div style="font-weight: 600;">Jaccard</div>
             <div style="font-size: 0.85rem; color: #666;">Similitud entre puntos de muestreo</div>
          </div>
-        <div style="background: #f0f7f0; border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;">
-            <div style="font-size: 1.8rem;">📥</div>
-            <div style="font-weight: 600;">Exporta a Excel</div>
-        </div>
     </div>
 </div>
 <hr>
@@ -296,15 +292,6 @@ if archivo_subido is not None:
 
         st.success("Análisis completado con éxito")
 
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.metric("Puntos Analizados", len(df_base.columns))
-        with col2:
-            st.metric("Riqueza Total de Taxones", len(df_base.index))
-        with col3:
-            st.metric("Taxon Dominante Global", str(df_base.sum(axis=1).idxmax()))
-
-        st.markdown("---")
 
         # ------------------------------------------
         # GENERACIÓN DEL EXCEL DESCARGABLE
@@ -317,6 +304,27 @@ if archivo_subido is not None:
             if df_jaccard is not None:
                 df_jaccard.to_excel(writer, sheet_name="Similitud_Jaccard")
         buffer_excel.seek(0)
+
+
+        # ------------------------------------------
+        # Pone los resultados en la pagina principal.
+        # ------------------------------------------
+        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            st.metric("Puntos Analizados", len(df_base.columns))
+        with col2:
+            st.metric("Riqueza Total de Taxones", len(df_base.index))
+        with col3:
+            st.metric("Taxon Dominante Global", str(df_base.sum(axis=1).idxmax()))
+        with col4:
+            st.write("")  # pequeño espaciado
+            st.download_button(
+            label="📥 Descargar Excel",
+            data=buffer_excel,
+            file_name="resultados_biodiversidad.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
+        st.markdown("---")
 
         # ------------------------------------------
         # PESTAÑAS DE RESULTADOS
