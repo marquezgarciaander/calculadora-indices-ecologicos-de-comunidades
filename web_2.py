@@ -305,7 +305,7 @@ if archivo_subido is not None:
         # PESTAÑAS DE RESULTADOS
         # La pestaña de Jaccard solo aparece si el usuario la seleccionó.
         # ------------------------------------------
-        tabs_disponibles = ["Biodiversidad e Índices"]
+        tabs_disponibles = ["Índices"]
         if df_jaccard is not None:
             tabs_disponibles.append("Similitud de Jaccard")
 
