@@ -17,6 +17,8 @@ def calcular_shannon(datos_filtrados, abundancia):
 def calcular_pielou(shannon, riqueza):
     if riqueza > 1:
         return shannon / np.log(riqueza)
+    elif riqueza == 1:
+        return 1
     return 0
 
 def calcular_Simpson_D(datos_filtrados, abundancia):
