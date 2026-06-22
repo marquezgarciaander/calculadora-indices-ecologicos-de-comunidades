@@ -202,7 +202,7 @@ if archivo_subido is not None:
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
             st.write("") 
-            st.dataframe(df_abundancia, use_container_width=True)
+            st.dataframe(df_indices, use_container_width=True)
             
         with tab_jac:
             st.subheader("Matriz Cuadrada de Jaccard (Presencia/Ausencia)")
