@@ -50,7 +50,11 @@ def cargar_y_limpiar_matriz(archivo_subido):
     
     # Lee el archivo según su extensión
     if archivo_subido.name.endswith(".csv"):
-        df_bruto = pd.read_csv(archivo_subido, header=None)
+        try:
+            df_bruto = pd.read_csv(archivo_subido, header=None, sep=';')
+        except:
+            archivo_subido.seek(0)
+            df_bruto = pd.read_csv(archivo_subido, header=None, sep=',')
     else:
         df_bruto = pd.read_excel(archivo_subido, header=None)
 
