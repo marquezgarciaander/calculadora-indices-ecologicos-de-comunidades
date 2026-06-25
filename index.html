@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculadora de Índices Ecológicos | Shannon, Simpson, Pielou, Jaccard</title>
+  <title>Calculadora de índices ecológicos de comunidades | Shannon, Simpson, Pielou, Jaccard</title>
   <meta name="description" content="Calcula automáticamente índices de biodiversidad (Shannon, Simpson, Pielou, Jaccard) desde tu Excel o CSV. Herramienta gratuita para ecólogos, biólogos y técnicos ambientales." />
   <meta name="keywords" content="calculadora índices ecológicos, índice de Shannon, índice de Simpson, índice de Pielou, similitud de Jaccard, biodiversidad, ecología de comunidades, análisis de biodiversidad, macroinvertebrados, herramienta ecología gratis" />
   <link rel="canonical" href="https://marquezgarciaander.github.io/calculadora-indices-ecologicos-de-comunidades/" />
@@ -337,7 +337,7 @@
   <!-- HERO -->
   <section class="hero">
     <p class="eyebrow">Herramienta gratuita · Sin registro</p>
-    <h1>Calcula índices ecológicos<br>desde tu <em>Excel o CSV</em></h1>
+    <h1>Calcula índices ecológicos desde tu Excel o CSV</h1>
     <p class="hero-sub">
       Sube tu matriz de abundancias y obtén Shannon, Simpson, Pielou y Jaccard
       al instante. Sin instalar nada, sin código.
@@ -356,17 +356,17 @@
         <div class="indice-card">
           <div class="indice-formula">H' = −Σ pᵢ ln(pᵢ)</div>
           <div class="indice-nombre">Shannon</div>
-          <div class="indice-desc">Mide diversidad combinando riqueza y equitatividad. El índice más usado en ecología de comunidades.</div>
+          <div class="indice-desc">Mide diversidad combinando riqueza y equidad. El índice más usado en ecología de comunidades.</div>
         </div>
         <div class="indice-card">
           <div class="indice-formula">J' = H' / ln(S)</div>
           <div class="indice-nombre">Pielou</div>
-          <div class="indice-desc">Indica qué tan equitativamente se distribuyen los individuos entre las especies. Valores de 0 a 1.</div>
+          <div class="indice-desc">Indica qué tan equitativamente se distribuyen los taxones entre los puntos de muestreo. Valores de 0 a 1.</div>
         </div>
         <div class="indice-card">
           <div class="indice-formula">D, 1−D, 1/D</div>
           <div class="indice-nombre">Simpson</div>
-          <div class="indice-desc">Probabilidad de que dos individuos elegidos al azar sean de la misma especie. Tres variantes incluidas.</div>
+          <div class="indice-desc">Probabilidad de que dos individuos elegidos al azar sean del mismo taxón. Tres variantes incluidas.</div>
         </div>
         <div class="indice-card">
           <div class="indice-formula">J = c / (a+b+c)</div>
@@ -385,14 +385,14 @@
         <div class="paso-num">1</div>
         <div class="paso-texto">
           <h3>Prepara tu matriz de abundancias</h3>
-          <p>Una columna con los taxones (puedes llamarla <code>Especie</code>, <code>Taxon</code>, <code>Familia</code> o <code>Macroinvertebrado</code>) y una columna por cada punto de muestreo.</p>
+          <p>Una columna con los taxones (puedes llamarla <code>Especie</code>, <code>Taxon</code> o <code>Familia</code> y una columna por cada punto de muestreo.</p>
         </div>
       </div>
       <div class="paso">
         <div class="paso-num">2</div>
         <div class="paso-texto">
           <h3>Sube el archivo</h3>
-          <p>La calculadora acepta <code>.xlsx</code>, <code>.xls</code> y <code>.csv</code>. Detecta automáticamente la columna de taxones aunque el archivo no tenga un formato estándar.</p>
+          <p>La calculadora acepta <code>.xlsx</code>, <code>.xls</code> y <code>.csv</code>. Detecta automáticamente la columna de taxones aunque el archivo no tenga un formato estándar. En cualquier caso hay una plantilla disponible. </p>
         </div>
       </div>
       <div class="paso">
@@ -412,31 +412,6 @@
     </div>
   </section>
 
-  <!-- PARA QUIÉN -->
-  <section class="para-quien">
-    <div class="para-quien-inner">
-      <h2>Para quién es esta herramienta</h2>
-      <div class="audiencia-grid">
-        <div class="audiencia-item">
-          <strong>Estudiantes de biología</strong>
-          <span>TFGs, prácticas de campo, asignaturas de ecología de comunidades.</span>
-        </div>
-        <div class="audiencia-item">
-          <strong>Técnicos ambientales</strong>
-          <span>Estudios de impacto, informes de biodiversidad, seguimiento de hábitats.</span>
-        </div>
-        <div class="audiencia-item">
-          <strong>Investigadores</strong>
-          <span>Análisis rápido de muestreos sin necesidad de R o Python.</span>
-        </div>
-        <div class="audiencia-item">
-          <strong>Consultoras ambientales</strong>
-          <span>Automatización de cálculos que se hacen manualmente en Excel.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA FINAL -->
   <section class="cta-final">
     <h2>Empieza ahora, es gratis</h2>
@@ -446,11 +421,6 @@
     </a>
   </section>
 
-  <footer>
-    <p>Herramienta desarrollada con Python y Streamlit ·
-      <a href="https://github.com/marquezgarciaander/calculadora-indices-ecologicos-de-comunidades" target="_blank" rel="noopener">Ver código en GitHub</a>
-    </p>
-  </footer>
 
 </body>
 </html>
